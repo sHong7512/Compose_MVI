@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kotlin.ksp)
+    id("dagger.hilt.android.plugin")
 }
 
 
@@ -76,5 +78,19 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.hilt)
+    implementation(libs.hilt.navigation.compose)
+    ksp(libs.hilt.compiler.ksp)
+
+    implementation(libs.retrofit2)
+    implementation(libs.retrofit2.gson)
+
+    implementation(libs.okhttp3)
+    implementation(libs.okhttp3.logging.interceptor)
+
+    implementation(libs.room.rumtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler.ksp)
 }
