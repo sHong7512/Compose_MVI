@@ -1,4 +1,4 @@
-package com.shong.compose_mvi.ui.composable.basic
+package com.shong.compose_mvi.ui.composable.common
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize

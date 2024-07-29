@@ -24,6 +24,16 @@ android {
         }
     }
 
+//    signingConfigs {
+//        create("signedKey")
+//         {
+//            storeFile = file('../storeFile.keystore')
+//            storePassword = 'storePassword'
+//            keyAlias = 'keyAlias'
+//            keyPassword = 'keyPassword'
+//        }
+//    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -31,8 +41,29 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+//            signingConfig = signingConfigs.getByName("signedKey")
+            signingConfig = signingConfigs.getByName("debug")
+            resValue("string", "app_name", "Compose_MVI")
+        }
+        debug {
+            isMinifyEnabled = false
+            applicationIdSuffix = ".debug"
+            resValue("string", "app_name", "Compose_MVI_debug")
         }
     }
+
+    flavorDimensions += "server"
+    productFlavors {          // 2
+        create("Live") {
+            dimension = "server"
+            buildConfigField("String", "BASE_URL", "\"http:/worldtimeapi.org/api/\"")
+        }
+        create("Develop") {
+            dimension = "server"
+            buildConfigField("String", "BASE_URL", "\"http://worldtimeapi.org/api/\"")
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -42,6 +73,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"

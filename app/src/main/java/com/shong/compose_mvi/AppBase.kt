@@ -8,14 +8,19 @@ import dagger.hilt.android.HiltAndroidApp
 
 /**
  * @author SoonHong Kwon
- * Compose + MVI pattern with kotlin 2.0
- * DI - hilt 적용
- * reference :: https://proandroiddev.com/mvi-architecture-with-kotlin-flows-and-channels-d36820b2028d
+ * Compose + MVI pattern
+ * kotlin 2.0
+ * DI => hilt
  */
 
-fun Any.logD(msg: String) = Log.d("${this::class.java.simpleName}_sHong", msg)
-fun Any.logW(msg: String) = Log.w("${this::class.java.simpleName}_sHong", msg)
-fun Any.logE(msg: String) = Log.e("${this::class.java.simpleName}_sHong", msg)
+fun isLogShow(): Boolean = BuildConfig.DEBUG
+
+fun Any.logD(msg: String) { if (isLogShow()) Log.d("${this::class.java.simpleName}_sHong", msg) }
+fun Any.logW(msg: String) { if (isLogShow()) Log.w("${this::class.java.simpleName}_sHong", msg) }
+fun Any.logE(msg: String) { if (isLogShow()) Log.e("${this::class.java.simpleName}_sHong", msg) }
+fun logD(tag: String, msg: String) { if (isLogShow()) Log.d("${tag}_sHong", msg) }
+fun logW(tag: String, msg: String) { if (isLogShow()) Log.w("${tag}_sHong", msg) }
+fun logE(tag: String, msg: String) { if (isLogShow()) Log.e("${tag}_sHong", msg) }
 
 private var toast: Toast? = null
 fun Context.toast(message: String) {

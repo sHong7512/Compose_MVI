@@ -5,9 +5,6 @@ import androidx.room.Insert
 import androidx.room.Query
 import com.shong.compose_mvi.data.db.AppLog
 
-/**
- * Data access object to query the database.
- */
 @Dao
 interface LogDao {
     @Query("SELECT * FROM logs ORDER BY id DESC")

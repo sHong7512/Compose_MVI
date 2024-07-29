@@ -1,5 +1,6 @@
 package com.shong.compose_mvi.data.remote.retrofitClient
 
+import com.shong.compose_mvi.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -12,7 +13,7 @@ import javax.net.ssl.TrustManager
 import javax.net.ssl.X509TrustManager
 
 class TimeRetrofitApi constructor(private val httpLoggingInterceptor: HttpLoggingInterceptor) {
-    private val baseUrl: String = "http://worldtimeapi.org/api/"
+    private val baseUrl: String = BuildConfig.BASE_URL
     private var ignoreBrowserCookie = true
 
     companion object {

@@ -15,7 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.shong.compose_mvi.ui.composable.basic.BasicProgressBar
+import com.shong.compose_mvi.ui.composable.common.BasicProgressBar
 import com.shong.compose_mvi.ui.theme.Compose_MVITheme
 
 @Composable
@@ -33,7 +33,7 @@ fun TimePreview() {
 }
 
 /*
-// DI 된거는 일반적인 방식으로 가져오기 힘듬. 비교용으로 남겨둠
+// DI 된거는 일반적인 방식과 다르게 프리뷰 가져와야함. 비교용으로 남겨둠
 @Preview
 @Composable
 private fun TimePreview_Worse() {
@@ -57,7 +57,7 @@ private fun Content(
             is TimeState.Success -> Text(state.dateStr)
             is TimeState.Loading -> BasicProgressBar(modifier = Modifier.size(50.dp))
             is TimeState.Fail -> Text(state.error)
-            is TimeState.Initial -> {}
+            is TimeState.Initial -> Text("버튼을 누르세요")
         }
         Button(onClick = { event(TimeEvent.GetDeviceTime) }) {
             Text("Get Device Time")

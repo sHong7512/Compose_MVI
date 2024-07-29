@@ -2,6 +2,7 @@ package com.shong.compose_mvi.ui.composable.time
 
 import androidx.lifecycle.viewModelScope
 import com.shong.compose_mvi.data.Repository
+import com.shong.compose_mvi.logD
 import com.shong.compose_mvi.ui.composable.BaseViewModel
 import com.shong.compose_mvi.util.DateFormatter
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -37,10 +38,8 @@ class TimeViewModel @Inject constructor(
                     if (unixTimestamp == null) {
                         throw NullPointerException("unixTimestamp is null")
                     } else {
-                        val instant = Instant.ofEpochSecond(unixTimestamp)
-                        val zoneId = ZoneId.of("Asia/Seoul")
-                        val localDateTime = LocalDateTime.ofInstant(instant, zoneId)
-                        TimeState.Success(dateStr = dateFormatter.format(localDateTime))
+                        logD("${unixTimestamp} // ${System.currentTimeMillis() / 1000}")
+                        TimeState.Success(dateStr = dateFormatter.format(unixTimestamp))
                     }
                 } catch (e: Exception) {
                     TimeState.Fail("시간 요청 에러 :: $e")
@@ -48,7 +47,7 @@ class TimeViewModel @Inject constructor(
             }
 
             is TimeEvent.GetDeviceTime -> {
-                TimeState.Success(dateStr = dateFormatter.format(LocalDateTime.now()))
+                TimeState.Success(dateStr = dateFormatter.format(System.currentTimeMillis() / 1000))
             }
         }
         setState(newState)

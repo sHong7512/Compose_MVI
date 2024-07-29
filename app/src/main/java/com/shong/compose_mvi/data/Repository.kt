@@ -15,14 +15,9 @@ class Repository constructor(private val logDao: LogDao, timeApi: TimeRetrofitAp
         return epInterface.getCurrentTime().body()
     }
 
-    suspend fun addLog(msg: String) {
+    suspend fun addLog(msg: String, sec: Long) {
         delay(500)
-        logDao.insertAllDB(
-            AppLog(
-                msg,
-                System.currentTimeMillis()
-            )
-        )
+        logDao.insertAllDB(AppLog(msg, sec))
     }
 
     suspend fun getAllLogs(): List<AppLog> {
