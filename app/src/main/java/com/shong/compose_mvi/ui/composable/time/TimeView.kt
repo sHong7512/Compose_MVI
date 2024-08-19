@@ -12,11 +12,15 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.shong.compose_mvi.data.DummyData
+import com.shong.compose_mvi.data.remote.model.TimeResponse
 import com.shong.compose_mvi.ui.composable.common.BasicProgressBar
 import com.shong.compose_mvi.ui.theme.Compose_MVITheme
+import com.shong.compose_mvi.util.DateFormatter
 
 @Composable
 fun TimeView(viewModel: TimeViewModel = hiltViewModel()) {
@@ -28,7 +32,8 @@ fun TimeView(viewModel: TimeViewModel = hiltViewModel()) {
 @Composable
 fun TimePreview() {
     Compose_MVITheme {
-        Content(state = TimeState.Initial) {}
+        val unixTimestamp = DummyData.get<TimeResponse>(LocalContext.current).unixTime
+        Content(state = TimeState.Success(dateStr = DateFormatter().format(unixTimestamp))) {}
     }
 }
 

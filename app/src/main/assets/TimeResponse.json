@@ -1,0 +1,17 @@
+{
+  "utc_offset": "+00:00",
+  "timezone": "Etc/UTC",
+  "day_of_week": 1,
+  "day_of_year": 232,
+  "datetime": "2024-08-19T01:42:58.604315+00:00",
+  "utc_datetime": "2024-08-19T01:42:58.604315+00:00",
+  "unixtime": 1724031778,
+  "raw_offset": 0,
+  "week_number": 34,
+  "dst": false,
+  "abbreviation": "UTC",
+  "dst_offset": 0,
+  "dst_from": null,
+  "dst_until": null,
+  "client_ip": "211.109.10.2"
+}
