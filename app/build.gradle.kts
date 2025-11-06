@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace = "com.shong.compose_mvi"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.shong.compose_mvi"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -48,35 +48,36 @@ android {
         debug {
             isMinifyEnabled = false
             applicationIdSuffix = ".debug"
-            resValue("string", "app_name", "Compose_MVI_debug")
+            resValue("string", "app_name", "Compose_MVI.debug")
         }
     }
 
     flavorDimensions += "server"
-    productFlavors {          // 2
+    productFlavors {
         create("Live") {
             dimension = "server"
-            buildConfigField("String", "BASE_URL", "\"http:/worldtimeapi.org/api/\"")
+            buildConfigField("String", "TOMO_URL", "\"http://tomo.api.uangel.com:8100/\"")
+            buildConfigField("String", "TIME_URL", "\"http:/worldtimeapi.org/api/\"")
+            buildConfigField("Boolean", "USE_UNSAFE_OKHTTP", "true")
         }
         create("Develop") {
             dimension = "server"
-            buildConfigField("String", "BASE_URL", "\"http://worldtimeapi.org/api/\"")
+            buildConfigField("String", "TOMO_URL", "\"http://192.168.1.121:8100/\"")
+            buildConfigField("String", "TIME_URL", "\"http:/worldtimeapi.org/api/\"")
+            buildConfigField("Boolean", "USE_UNSAFE_OKHTTP", "true")
         }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packaging {
         resources {
@@ -102,6 +103,12 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.security.crypto)
+    implementation(libs.androidx.compose.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -125,4 +132,6 @@ dependencies {
     implementation(libs.room.rumtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler.ksp)
+
+    implementation(libs.coil.compose)
 }

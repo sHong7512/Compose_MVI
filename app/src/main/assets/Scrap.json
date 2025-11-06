@@ -1,0 +1,171 @@
+{
+  "status": 0,
+  "fault": null,
+  "version": null,
+  "result": {
+    "name": "앱폴더",
+    "id": 12238,
+    "datas": [
+      {
+        "id": 391610,
+        "type": "A",
+        "link": "?cd=popup&ac_id=2677&md=project",
+        "title": "안전하게 놀이하기",
+        "regDate": 1722408179000,
+        "scrapId": 2677
+      },
+      {
+        "id": 391546,
+        "type": "A",
+        "link": "?cd=popup&ac_id=15548&md=project",
+        "title": "(동화) 2호 수준1 봄의 요정과 꽃샘 요정",
+        "regDate": 1722151354000,
+        "scrapId": 15548
+      },
+      {
+        "id": 390039,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13446&md=project",
+        "title": "모양 조각으로 교통 기관 만들기",
+        "regDate": 1720503229000,
+        "scrapId": 13446
+      },
+      {
+        "id": 354306,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13771&md=project",
+        "title": "(게임) 쿠션으로 즐기는 놀이",
+        "regDate": 1685596372000,
+        "scrapId": 13771
+      },
+      {
+        "id": 330264,
+        "type": "A",
+        "link": "?cd=popup&ac_id=14518&md=project",
+        "title": "[영업] 플라잉 홍보영상",
+        "regDate": 1667190617000,
+        "scrapId": 14518
+      },
+      {
+        "id": 292756,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13135&md=project",
+        "title": " [AR][홀로그램] 원숭이와 초콜릿 나무",
+        "regDate": 1642861647000,
+        "scrapId": 13135
+      },
+      {
+        "id": 261154,
+        "type": "A",
+        "link": "?cd=popup&ac_id=4958&md=project",
+        "title": "(동요) 꼬마야 꼬마야",
+        "regDate": 1628225924000,
+        "scrapId": 4958
+      },
+      {
+        "id": 251368,
+        "type": "A",
+        "link": "?cd=popup&ac_id=3879&md=project",
+        "title": "사계절 자연의 소리",
+        "regDate": 1623388451000,
+        "scrapId": 3879
+      },
+      {
+        "id": 227434,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13992&md=project",
+        "title": "벌집 구성하기",
+        "regDate": 1615527941000,
+        "scrapId": 13992
+      },
+      {
+        "id": 135927,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13588&md=project",
+        "title": "멘델스존 <한여름 밤의 꿈 중 결혼 행진곡>",
+        "regDate": 1581575135000,
+        "scrapId": 13588
+      },
+      {
+        "id": 135926,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13586&md=project",
+        "title": "엘가 <사랑의 인사>",
+        "regDate": 1581575123000,
+        "scrapId": 13586
+      },
+      {
+        "id": 132391,
+        "type": "A",
+        "link": "?cd=popup&ac_id=2162&md=project",
+        "title": "폴짝폴짝 개구리",
+        "regDate": 1579056560000,
+        "scrapId": 2162
+      },
+      {
+        "id": 130349,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13624&md=project",
+        "title": "(동화) 누가 공기를 먹었을까",
+        "regDate": 1576715640000,
+        "scrapId": 13624
+      },
+      {
+        "id": 130348,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13357&md=project",
+        "title": "정보 보호의 날",
+        "regDate": 1576715584000,
+        "scrapId": 13357
+      },
+      {
+        "id": 130346,
+        "type": "A",
+        "link": "?cd=popup&ac_id=13038&md=project",
+        "title": "피에르 오귀스트 르누아르  <물뿌리개를 든 소녀>",
+        "regDate": 1576715405000,
+        "scrapId": 13038
+      },
+      {
+        "id": 125929,
+        "type": "A",
+        "link": "?cd=popup&ac_id=9482&md=project",
+        "title": "물먹는 수건",
+        "regDate": 1573044206000,
+        "scrapId": 9482
+      },
+      {
+        "id": 125927,
+        "type": "A",
+        "link": "?cd=popup&ac_id=5642&md=project",
+        "title": "물에 관한 책 만들기",
+        "regDate": 1573044202000,
+        "scrapId": 5642
+      },
+      {
+        "id": 125925,
+        "type": "A",
+        "link": "?cd=popup&ac_id=10829&md=project",
+        "title": "연못에 버려진 쓰레기를 건져요",
+        "regDate": 1573044195000,
+        "scrapId": 10829
+      },
+      {
+        "id": 125923,
+        "type": "A",
+        "link": "?cd=popup&ac_id=5639&md=project",
+        "title": "실내 수영장 구성하기",
+        "regDate": 1573044191000,
+        "scrapId": 5639
+      },
+      {
+        "id": 125171,
+        "type": "A",
+        "link": "?cd=popup&ac_id=5341&md=project",
+        "title": "세계 민속 박물관 다녀오기",
+        "regDate": 1572411439000,
+        "scrapId": 5341
+      }
+    ]
+  }
+}

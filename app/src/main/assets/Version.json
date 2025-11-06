@@ -1,0 +1,102 @@
+{
+  "status": 0,
+  "result": {
+    "userInfo": {
+      "id": 77406,
+      "userId": "unqea031",
+      "name": "만3세1반 선생님",
+      "email": null,
+      "instituteName": "모여라유치원",
+      "className": "산새소리반",
+      "age": 3,
+      "serviceMode": "A",
+      "teacherAge": 3,
+      "tomobooks": "AP",
+      "tomonote": "AP",
+      "tomonoteRole": "",
+      "branch": "본사관리 유엔젤"
+    },
+    "resourceDomain": "http://cdn.nsu.smartkids.uangel.com:8080/webdav2/tomo2",
+    "contentDomain": "http://cdn.nsu.smartkids.uangel.com:8080/webdav/tomo/content",
+    "initFile": "http://cdn.nsu.smartkids.uangel.com:8080/webdav2/tomo2/201509/init_nurinote_1_09231818032.zip",
+    "description": "        　　     ▣ 토모노트 업데이트 알림 ▣\r\n\r\n안드로이드 9.0 대응\r\n*************************************************\r\n▷ 카메라 기능이 포함된 콘텐츠 실행 시 \r\n    콘텐츠 종료되는 현상 수정\r\n*************************************************",
+    "url": null,
+    "updateUrl": null,
+    "lastVer": "3.7.10",
+    "force": "N",
+    "needUpdate": false,
+    "keywords": [
+      {
+        "keyword": "#교구",
+        "main_yn": "Y"
+      },
+      {
+        "keyword": "#클래식",
+        "main_yn": "Y"
+      },
+      {
+        "keyword": "#안전교육",
+        "main_yn": "Y"
+      }
+    ],
+    "recommends": [
+      {
+        "id": 1846,
+        "activityId": 2745,
+        "image": "",
+        "description": "봄은 언제 오는 걸까?"
+      },
+      {
+        "id": 1847,
+        "activityId": 3222,
+        "image": "",
+        "description": "내 몸에는 이름이 있어요"
+      },
+      {
+        "id": 1848,
+        "activityId": 11395,
+        "image": "",
+        "description": "식목일이에요"
+      }
+    ],
+    "currentForest": 16,
+    "currentProject": 1,
+    "monthlyBooks": 132,
+    "aidBooks": 54,
+    "currentBooks": [
+      {
+        "id": 54,
+        "type": "aid",
+        "level": "수준1"
+      },
+      {
+        "id": 78,
+        "type": "aid",
+        "level": "수준2"
+      },
+      {
+        "id": 32,
+        "type": "aid",
+        "level": "수준3"
+      },
+      {
+        "id": 132,
+        "type": "monthly",
+        "level": "수준1"
+      },
+      {
+        "id": 144,
+        "type": "monthly",
+        "level": "수준2"
+      },
+      {
+        "id": 131,
+        "type": "monthly",
+        "level": "수준3"
+      }
+    ],
+    "popupNotice": null,
+    "noticeModified": 1712642282000,
+    "faqModified": 1709025026000
+  }
+}
